@@ -24,7 +24,7 @@
   <div id="admin-menu" class="admin-menu">
     <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100%">
     <div class="menu-heading">Menu</div>
-    <i class="fa fa-close fa-2x" id="admin-menu-close" onClick="closeMenu()"
+    <i class="fa fa-close fa-2x" id="admin-menu-close" onClick="closeAdminMenu()"
       style="align-self: right; color: #d3d3d3; height: 1.5rem"></i>
     </div>
     <hr class="menu-hr" />
@@ -41,19 +41,12 @@
     </div>
   </div>
   <div class="banner navbar" id="banner">
-    <icon onClick="showMenu()" class="appbar-icon fas fa-bars"></icon>
+    <icon onClick="showAdminMenu()" class="appbar-icon fas fa-bars"></icon>
     <h2 class="appbar-title" id='admin-appbar-title'></h2>
     <icon onClick="goToAdminMessages()" class="appbar-icon far fa-envelope"></icon>
   </div>
-  <div class="page container">
-    <div class="header container" id="header">
-      <img class="image" alt="Lateefah Smellie - Image" src="../profile.png">
-      <div class="profile">
-        <div class="heading" id="profileHeading"></div>
-        <div class="text" id="profileText"></div>
-      </div>
-    </div>
-    <div class="content container">
+  <div class="app-admin container">
+      <div class="content container">
       <div class="collapsible" id="experience-collapsible">
         <div class="collapsible-title-area">
           <div class="bullet"></div>
@@ -62,50 +55,7 @@
         <div class="triangle" id="experience-triangle"></div>
       </div>
       <div class="collapsed no-display" id="experience-collapsed"></div>
-      <div class="collapsible" id="skills-collapsible">
-        <div class="collapsible-title-area">
-          <div class="bullet"></div>
-          <div class="heading sect-title">Technical Skills</div>
-        </div>
-        <div class="triangle" id="skills-triangle"></div>
       </div>
-      <div class="collapsed  no-display" id="skills-collapsed">
-        <div class="skills container">
-          <div class="collapsed-h1">Languages and Technologies</div>
-          <div class="collapsed-subs" id="skillsList"></div>
-          <div class="collapsed-h1">Methodologies</div>
-          <div class="collapsed-subs" id="methodologies">
-            <div class="collapsed-list-item">Scrum Agile Development</div>
-            <div class="collapsed-list-item">Test Driven Development</div>
-            <div class="collapsed-list-item">Continuous Integration</div>
-          </div>
-        </div>
-      </div>
-      <div class="collapsible" id="education-collapsible">
-        <div class="collapsible-title-area">
-          <div class="bullet"></div>
-          <div class="heading sect-title">Education</div>
-        </div>
-        <div class="triangle" id="education-triangle"></div>
-      </div>
-      <div class="collapsed  no-display" id="education-collapsed"></div>
-      <div class="collapsible" id="cocurricular-collapsible">
-        <div class="collapsible-title-area">
-          <div class="bullet"></div>
-          <div class="heading sect-title">Co-curricular Involvement</div>
-        </div>
-        <div class="triangle" id="cocurricular-triangle"></div>
-      </div>
-      <div class="collapsed  no-display" id="cocurricular-collapsed"></div>
-      <div class="collapsible" id="references-collapsible">
-        <div class="collapsible-title-area">
-          <div class="bullet"></div>
-          <div class="heading sect-title">References</div>
-        </div>
-        <div class="triangle" id="references-triangle"></div>
-      </div>
-      <div class="collapsed  no-display" id="references-collapsed"></div>
-    </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X
 +965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

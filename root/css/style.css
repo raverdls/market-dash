@@ -43,11 +43,22 @@ body {
   margin: 20px 10px;
 }
 
-.page {
+.app-admin {
+  height: 900px;
+  overflow-y: scroll;
   display: grid;
   grid-template-columns: 1fr 6fr 6fr 1fr;
-  grid-template-rows: 1fr 6fr 3.2rem;
+  grid-template-rows: 1fr 6fr;
 }
+
+.app-cust {
+  height: 900px;
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 1fr 6fr 6fr 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
+}
+
 
 .banner {
   height: 4rem;
