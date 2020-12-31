@@ -6,11 +6,27 @@ window.addEventListener('load', () => {
 });
 
 function showMenu() {
-    console.log("menu shown")
+    const menu = document.getElementById("admin-menu");
+    menu.style.visibility = "visible";
+    menu.style.width = "5%";
+    menu.style.width = "50%";
+    menu.style.width = "80%";
 }
 
 function goToAdminMessages() {
     console.log("go to messages");
+}
+
+function goToPickupTimes() {
+    console.log("pick up ");
+}
+
+function closeMenu() {
+    const menu = document.getElementById("admin-menu");
+    menu.style.width = "50%";
+    menu.style.width = "30%";
+    menu.style.width = "5%";
+    menu.style.visibility = "hidden";
 }
 
 function updateAdminAppBar(title) {

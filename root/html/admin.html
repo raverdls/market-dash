@@ -22,14 +22,18 @@
 
 <body>
   <div id="admin-menu" class="admin-menu">
+    <div style="display: flex; flex-direction: row; justify-content: space-between; align-items: center; width: 100%">
     <div class="menu-heading">Menu</div>
+    <i class="fa fa-close fa-2x" id="admin-menu-close" onClick="closeMenu()"
+      style="align-self: right; color: #d3d3d3; height: 1.5rem"></i>
+    </div>
     <hr class="menu-hr" />
     <div class="menu-items">
       <span class="menu-item" onClick="goToAdminMessages()">
         Messages
       </span>
       <span class="menu-item" onClick="goToPickupTimes()">
-        AdjustPickupTimes
+        Adjust Pickup Times
       </span>
       <span class="menu-item">
         Settings
