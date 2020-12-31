@@ -1,4 +1,4 @@
-# resume-lat - Practice Project
+# Market Dash - UI Project
 
 This is a practice resume project using html, css and vanilla javascript. A mobile first design was used, more so for implementation than initial design (which was done using Figma).
 
