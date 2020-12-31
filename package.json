@@ -1,0 +1,16 @@
+{
+  "name": "market-dash",
+  "version": "1.0.0",
+  "description": "supermarket app",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm run start"
+  },
+  "author": "Lateefah Smellie",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.3",
+    "live-server": "^1.2.1",
+    "open": "^7.3.0"
+  }
+}

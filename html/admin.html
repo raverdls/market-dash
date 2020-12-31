@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Supermarket</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="../css/admin.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script srcs="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <!--JavaScript Files -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Abel|Alata|Asap:700|Barlow+Condensed|Cairo:700|Exo+2|Kanit|Libre+Franklin|Montserrat|Muli:800|Noto+Sans+KR|Noto+Sans+TC:700|Open+Sans|PT+Sans:700|Poppins:400,700|Public+Sans:900|Rubik|Signika|Ubuntu:700|Work+Sans:700&display=swap"
+    rel="stylesheet">
+  <script type="text/javascript" src="../js/admin.js"></script>
+  <script src="https://kit.fontawesome.com/649e22583c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="admin-menu" class="admin-menu">
+    <div class="menu-heading">Menu</div>
+    <hr class="menu-hr" />
+    <div class="menu-items">
+      <span class="menu-item" onClick="goToAdminMessages()">
+        Messages
+      </span>
+      <span class="menu-item" onClick="goToPickupTimes()">
+        AdjustPickupTimes
+      </span>
+      <span class="menu-item">
+        Settings
+      </span>
+    </div>
+  </div>
+  <div class="banner navbar" id="banner">
+    <icon onClick="showMenu()" class="appbar-icon fas fa-bars"></icon>
+    <h2 class="appbar-title" id='admin-appbar-title'></h2>
+    <icon onClick="goToAdminMessages()" class="appbar-icon far fa-envelope"></icon>
+  </div>
+  <div class="page container">
+    <div class="header container" id="header">
+      <img class="image" alt="Lateefah Smellie - Image" src="../profile.png">
+      <div class="profile">
+        <div class="heading" id="profileHeading"></div>
+        <div class="text" id="profileText"></div>
+      </div>
+    </div>
+    <div class="content container">
+      <div class="collapsible" id="experience-collapsible">
+        <div class="collapsible-title-area">
+          <div class="bullet"></div>
+          <div class="heading sect-title" id="experienceHeading">Professional Experience</div>
+        </div>
+        <div class="triangle" id="experience-triangle"></div>
+      </div>
+      <div class="collapsed no-display" id="experience-collapsed"></div>
+      <div class="collapsible" id="skills-collapsible">
+        <div class="collapsible-title-area">
+          <div class="bullet"></div>
+          <div class="heading sect-title">Technical Skills</div>
+        </div>
+        <div class="triangle" id="skills-triangle"></div>
+      </div>
+      <div class="collapsed  no-display" id="skills-collapsed">
+        <div class="skills container">
+          <div class="collapsed-h1">Languages and Technologies</div>
+          <div class="collapsed-subs" id="skillsList"></div>
+          <div class="collapsed-h1">Methodologies</div>
+          <div class="collapsed-subs" id="methodologies">
+            <div class="collapsed-list-item">Scrum Agile Development</div>
+            <div class="collapsed-list-item">Test Driven Development</div>
+            <div class="collapsed-list-item">Continuous Integration</div>
+          </div>
+        </div>
+      </div>
+      <div class="collapsible" id="education-collapsible">
+        <div class="collapsible-title-area">
+          <div class="bullet"></div>
+          <div class="heading sect-title">Education</div>
+        </div>
+        <div class="triangle" id="education-triangle"></div>
+      </div>
+      <div class="collapsed  no-display" id="education-collapsed"></div>
+      <div class="collapsible" id="cocurricular-collapsible">
+        <div class="collapsible-title-area">
+          <div class="bullet"></div>
+          <div class="heading sect-title">Co-curricular Involvement</div>
+        </div>
+        <div class="triangle" id="cocurricular-triangle"></div>
+      </div>
+      <div class="collapsed  no-display" id="cocurricular-collapsed"></div>
+      <div class="collapsible" id="references-collapsible">
+        <div class="collapsible-title-area">
+          <div class="bullet"></div>
+          <div class="heading sect-title">References</div>
+        </div>
+        <div class="triangle" id="references-triangle"></div>
+      </div>
+      <div class="collapsed  no-display" id="references-collapsed"></div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X
++965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
