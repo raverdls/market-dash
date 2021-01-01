@@ -337,6 +337,19 @@ function loadOrders() {
     displayOrders(in_orders);
 }
 
+function sortO(criteria) {
+    let new_lst = [];
+
+    if (criteria === time) {
+        new_lst
+    }
+
+}
+
+function filterO() {
+    //implement
+}
+
 function displayOrders() {
     //implement
 }
@@ -448,16 +461,38 @@ function filterOrderStauts(in_orders) {
 }
 
 function compareOrderTime(order1, order2) {
-    //implement comparator
+    let d1 = new Date(order2.datetime);
+    let d2 = new Date(order1.datetime);
+
+    return d1 - d2;
 }
 
 function compareDestLocation(order1, order2) {
-    //implement comparator
+
+    let time = compareOrderTime(order1, order2);
+
+    if (order1.deliveryaddress && order2.deliveryaddress) {
+        return (order1.deliveryaddress).localeCompare(order2.
+            deliveryaddress);
+    } else {
+        return time;
+    }
 }
 
 function compareStoreLocation(order1, order2) {
-    //implement comparator
+    let store1 = order1.store;
+    let location1 = order1.location;
+    let store2 = order2.store;
+    let location2 = order2.location;
+
+    let actl = stores.store1.locations.location1;
+    let actl2 = stores.store2.locations.location2;
+
+    return actl.localeCompare(actl2);
+
+
 }
+
 
 function loadMessages() {
     //implement

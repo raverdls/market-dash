@@ -46,17 +46,78 @@
     <icon onClick="goToAdminMessages()" class="appbar-icon far fa-envelope"></icon>
   </div>
   <div class="app-admin container">
-      <div class="content container">
-      <div class="collapsible" id="experience-collapsible">
-        <div class="collapsible-title-area">
-          <div class="bullet"></div>
-          <div class="heading sect-title" id="experienceHeading">Professional Experience</div>
+    <div id="admin-order-page">
+      <div class="sort-toggle" id="admin-sort-toggle">
+        <span class="fiter-label">Sort by</span>
+        <span class="sort-options">
+          <span id="time-sort" class="selected-option" onClick="sortO('time')">Time</span>
+          <hr class="options-vr" />
+          <span id="location-sort" onClick="sortO('time')">Location</span>
+        </span>
+      </div>
+      <div class="order-filter-button">
+        <button id="filter-btn" class="secondary-btn filter-btn">
+          <i class="fas fa-sliders-h"></i> Filter List</button>
+      </div>
+      <div class="fitler-collapsible" id="filter-collapsible">
+        <div class="filter-options-row">
+          <span id="delivery-filter">Delivery</span>
+          <hr class="options-vr" />
+          <span id="all-type-filter" class="selected-option">Any Type</span>
+          <hr class="options-vr" />
+          <span id="pickup-filter">Pickup</span>
         </div>
-        <div class="triangle" id="experience-triangle"></div>
+        <div class="filter-options-row">
+          <span id="pending-filter">Pending</span>
+          <hr class="options-vr" />
+          <span id="processed-filter">Processed</span>
+          <hr class="options-vr" />
+          <span id="completed-filter">Completed</span>
+          <hr class="options-vr" />
+          <span id="all-status-filter" class="selected-option">Any Status</span>
+        </div>
+        <button class="filter-btn filter-btn-apply" id="filter-btn-apply ">APPLY</button>
       </div>
-      <div class="collapsed no-display" id="experience-collapsed"></div>
+      <div class="orders" id="order-list">
+        <div class="order-tile card" id="orderid">
+          <div class="order-accent-box"></div>
+          <div class="order-details">
+            <div class="order-tile-row1">
+              <div class="order-id">
+                <i class="order-type-icon fas fa-truck"></i>
+                ORDHMP-0001
+              </div>
+              <div class="order-tile-time">
+                <i class="far fa-clock"></i>
+                10 mins ago
+              </div>
+            </div>
+            <div class="order-tile-status">Status: <span class="order-status-oval"> PENDING</span>
+            </div>
+            <div class="order-tile-numitems">11 items
+            </div>
+            <div class="order-tile-pickup"><strong>Pickup Time:</strong> 3 -4 PM</div>
+            <div class="order-tile-address"><strong>Delivery Address:</strong> 3 Cherry Gardens Drive</div>
+            <div class="order-tile-cost"><strong>Total Cost:</strong> $360.00</div>
+          </div>
+        </div>
+    
       </div>
-  </div>
+    </div>
+    <div id="admin-pickup-times" onload="updateAdminAppBar('Pickup Times')">
+      <div class="page-heading"> Adjust Pickup Times </div>
+      <div class="column-label-row">
+        <div class="column-label" id="availability-label">Availability</div>
+        <hr class="options-vr">
+        <div class="column-label" id='ptime-label'>Pickup Time</div>
+      </div>
+      <form id="pickupTimesForm" class="pickup-times-form">
+        <div class="form-check ptime-fcheck">
+          <input type="checkbox" class="form-check-input ptime-check-input" id="exampleCheck1">
+          <label class="form-check-label ptime-check-label " for="exampleCheck1">2 - 4 PM</label>
+        </div>
+      </form>
+    </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X
 +965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
